@@ -290,8 +290,8 @@ public class CheckIn_insert extends JFrame implements ActionListener,KeyListener
 		 //Send OTP To Mail
 		
 		  String host="mail.gmail.com";  
-		  final String user="mishradeepak0101@gmail.com";//change accordingly  
-		  final String password="mviyrajekngjzbmg";//change accordingly  
+		  final String user="mail Id";//change accordingly 
+		  final String password="password";//change accordingly  
 		    
 		   //Get the session object  
 		   Properties p = new Properties();  
@@ -763,7 +763,7 @@ public class CheckIn_insert extends JFrame implements ActionListener,KeyListener
 	}
 	@Override
 	public void keyTyped(KeyEvent arg0) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated methodÂ stub
 		
 	}
 	@Override
