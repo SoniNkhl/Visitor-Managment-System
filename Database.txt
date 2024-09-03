@@ -1,0 +1,127 @@
+desc adminmaster;
+Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ADMINID                                   NOT NULL VARCHAR2(20)
+ ADMINNAME                                          VARCHAR2(30)
+ ADMINPHONE                                         VARCHAR2(12)
+ ADMINEMAIL                                         VARCHAR2(30)
+ ADMINADDRESS                                       VARCHAR2(50)
+ ADMINGENDER                                        VARCHAR2(8)
+ ADMINPASSWORD                                      VARCHAR2(30)
+ STATUS                                             NUMBER(2)
+
+desc checkin;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CHECKINID                                 NOT NULL VARCHAR2(20)
+ VISITORID                                          VARCHAR2(20)
+ EMPID                                              VARCHAR2(20)
+ HODID                                              VARCHAR2(20)
+ DEPID                                              VARCHAR2(20)
+ DATEIN                                             DATE
+ STATUS                                             NUMBER(2)
+
+desc companymaster;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COMPANYID                                 NOT NULL VARCHAR2(20)
+ COMPANYNAME                                        VARCHAR2(30)
+ COMPANYEMAIL                                       VARCHAR2(30)
+ COMPANYPHONE                                       VARCHAR2(30)
+ COMPANYGST                                         VARCHAR2(15)
+ STATUS                                             NUMBER(2)
+
+desc departments;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DEPARTMENTID                              NOT NULL VARCHAR2(20)
+ DEPARTMENTNAME                                     VARCHAR2(30)
+ DESCRIPTION                                        VARCHAR2(50)
+ STATUS                                             NUMBER(2)
+
+desc employeeshiftmaster;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPID                                     NOT NULL VARCHAR2(20)
+ SHIFTID                                            VARCHAR2(20)
+ STATUS                                             NUMBER(2)
+
+desc employee;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPID                                     NOT NULL VARCHAR2(20)
+ EMPLOYEENAME                                       VARCHAR2(30)
+ EMPLOYEEEMAIL                                      VARCHAR2(30)
+ EMPLOYEEPHONE                                      VARCHAR2(12)
+ EMPLOYEEADDRESS                                    VARCHAR2(50)
+ EMPLOYEEGENDER                                     VARCHAR2(7)
+ HODID                                              VARCHAR2(20)
+ DEPARTMENTID                                       VARCHAR2(20)
+ STATUS                                             NUMBER(2)
+
+desc headofdepartment;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ HODID                                     NOT NULL VARCHAR2(20)
+ HODNAME                                            VARCHAR2(30)
+ HODEMAIL                                           VARCHAR2(30)
+ HODPHONE                                           VARCHAR2(15)
+ HODADDRESS                                         VARCHAR2(30)
+ DEPARTMENTID                                       VARCHAR2(20)
+ SHIFTID                                            VARCHAR2(20)
+ STATUS                                             NUMBER(2)
+
+desc holidaymaster;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ HOLIDAYID                                 NOT NULL VARCHAR2(20)
+ HOLIDAYNAME                                        VARCHAR2(20)
+ DATEOFHOLIDAY                                      VARCHAR2(20)
+ STATUS                                             NUMBER(2)
+
+desc shiftmaster;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SHIFTID                                   NOT NULL VARCHAR2(20)
+ FROMTIME                                           VARCHAR2(15)
+ TOTIME                                             VARCHAR2(15)
+ STATUS                                             NUMBER(2)
+
+desc usermaster;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USERID                                    NOT NULL VARCHAR2(20)
+ USERNAME                                           VARCHAR2(30)
+ USEREMAIL                                          VARCHAR2(20)
+ USERPHONE                                          VARCHAR2(20)
+ USERADDRESS                                        VARCHAR2(20)
+ USERGENDER                                         VARCHAR2(20)
+ USERPASSWORD                                       VARCHAR2(30)
+ STATUS                                             NUMBER(2)
+
+desc visitors;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ VISITORID                                 NOT NULL VARCHAR2(20)
+ VISITORNAME                                        VARCHAR2(30)
+ VISITOREMAIL                                       VARCHAR2(30)
+ VISITORPHONE                                       VARCHAR2(15)
+ VISITORADDRESS                                     VARCHAR2(50)
+ GENDER                                             VARCHAR2(7)
+ GOVIDTYPE                                          VARCHAR2(30)
+ GOVID                                              VARCHAR2(20)
+ STATUS                                             NUMBER(2)
+
+desc typemaster;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ IDTYPE                                    NOT NULL VARCHAR2(30)
+ IDNAME                                             VARCHAR2(30)
+
+desc staff;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STAFFID                                   NOT NULL NUMBER(5)
+ NAME                                               VARCHAR2(20)
+ CITY                                               VARCHAR2(20)
+ SALARY                                             NUMBER(9,2)
